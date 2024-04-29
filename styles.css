@@ -24,12 +24,12 @@ body{
 /* UNIVERSAL STYLES */
 .container{
     padding: 0 5rem;
-    width:100%;
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
     .container{
         padding: 0 2rem;
+        width: 100%;
     }
 }
 
