@@ -1,0 +1,880 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chela+One&family=Kalam:wght@300;400;700&family=Outfit:wght@100..900&family=Pacifico&family=Poppins:wght@800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'AmpleSoftPro-Bold';  
+  src: url('/assets/fonts/AmpleSoftPro-Bold.woff2') format('woff2'),   
+  url('/assets/fonts/AmpleSoftPro-Bold.woff') format('woff');
+  font-weight: bold;  
+}
+
+/* Now you can use the font-family 'AmpleSoftPro-Bold' in your CSS */
+
+      
+body{
+    position: relative;
+}
+
+/* UNIVERSAL STYLES */
+.container{
+    padding: 0 5rem;
+}
+
+@media screen and (max-width:425px) {
+    .container{
+        padding: 0 2rem;
+    }
+}
+
+/* NAV BAR STYLES */
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    height: 100px;
+}
+
+nav button{
+    border-radius: 16px;
+    background-color: white;
+    color: black;
+    padding:8px;
+    
+}
+
+/* HERO SECTION STYLES */
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-color: #001551;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-desc{
+    width: 30%;
+    margin-left: -63px;
+}
+.hero-img{
+    width: 50%;
+    margin-top: 100px;
+}
+#hero h1{
+  font-family: 'AmpleSoftPro-Bold';
+    position: relative;
+    padding: 26px;
+    margin:20px;
+    margin-left: -59px; 
+    margin-right:0px;
+    line-height: 33px;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 700;
+   
+}
+#hero p{
+    font-family: "Rubik", sans-serif;
+    position:relative;
+    padding:5px;
+    margin: 14px;
+    margin-left: -36px;
+    margin-right: -93px;
+    margin-top: -38px;
+    word-spacing: 4px;
+
+}
+.hero-desc button{
+    border-radius: 16px;
+    padding: 6px;
+    top: 400px;
+    left: 118px;
+    position: absolute;
+    color: black;
+    background-color: #ccd5ed;
+}
+
+.card-1{
+    position: absolute;
+    width: 285px;
+    height: 270px;
+    top: 66px;
+    left: 754px;
+    opacity: 1; 
+    margin: 100px;
+}
+
+.card-2{
+    position: absolute;
+    width: 204.33px;
+    height: 317.03px;
+    top: 98.32px;
+    left: 787px;
+    opacity: 1; 
+    transform: rotate(46.76deg);
+    margin: 100px;
+}
+.card-3{
+    position: absolute;
+    width: 268.78px;
+    height: 303.43px;
+    top: 72.47px;
+    left: 737.81px;
+    opacity: 1; 
+    transform: rotate(18.74deg);
+    margin: 100px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    nav {
+      height: auto;
+      flex-direction: flex;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    nav button {
+      margin-top: 65px;
+      border-radius: 16px;
+      background-color: white;
+      color: black;
+      padding: 6px;
+    }
+  
+    #hero {
+      height: auto;
+      padding: 66px;
+      text-align: center;
+    }
+  
+    .hero-desc {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .hero-img {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    #hero h1 {
+      font-size: large;
+      margin-left: 0;
+      margin-right: 0;
+      line-height: normal;
+      word-spacing: normal;
+    }
+  
+    #hero p {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 20px;
+      word-spacing: normal;
+    }
+  
+    .hero-desc button {
+      border-radius: 16px;
+      padding: 6px;
+      top: auto;
+      left: auto;
+      position: relative;
+      color: black;
+      background-color: #ccd5ed;
+    }
+  
+    .card-1{
+      position: static;
+      width: 60%;
+      height: auto;
+      margin: 20px 0;
+      transform: none;  
+      top: 66px;
+      left: 754px;
+      opacity: 1; 
+      margin: 100px;    
+    }
+
+    .card-2{
+      width: 20%;
+      top: 150.32px;
+      left: 197px;
+      opacity: 1; 
+      transform: rotate(36.76deg);
+      margin: 90px;
+      height: 30vh;
+    }
+    .card-3{
+      top: 114.47px;
+      left: 178.81px;
+      opacity: 1; 
+      transform: rotate(16.74deg);
+      margin: 100px;
+      width: 25%;
+      height: 30vh;
+    }
+  }
+  
+
+
+
+
+/* MONEY SECTION STYLES */
+#money-safe{
+    width: 100%;
+    height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 20px;
+}
+
+.money-left{
+    width: 50%;
+}
+
+.money-right{
+  width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.money-tab{
+    width: 245px;
+    height: 200px;
+    border-radius: 16px;
+    align-content: center;
+    padding: 12px;
+    line-height: 20px;
+}
+.money-tab h2{
+    justify-content: center;
+    align-items: center;
+    color: black !important;
+    font-size: 19px;
+    text-align: center;
+    margin: 0;
+    line-height: 25px;
+}
+.money-tab p{
+  color: black !important;
+}
+.money-left h1{
+font-weight: 700;
+size: 60px;
+line-height: 28px;
+
+}
+.money-tab:hover {
+    background-color: #001551 !important;
+    width: 260px;
+    height: 260px;
+    color: white !important;
+  }
+  .money-tab p:hover{
+    color: #ccd5ed !important;
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+    #money-safe {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  
+    .money-left, 
+    .money-right {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .money-right {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .money-tab {
+      width: 100%;
+      max-width: 260px;
+      height: 260px;
+      border-radius: 16px;
+      padding: 12px;
+      line-height: 25px;
+      text-align: center;
+    }
+  
+    .money-tab h2 {
+      font-size: 19px;
+      line-height: 25px;
+    }
+  
+    .money-left h1 {
+      font-size: 26px;
+      line-height: 36px;
+      text-align: center;
+      margin-left: 115px;
+    }
+  
+    .money-tab:hover {
+      background-color: #001551 !important;
+      color: white !important;
+    }
+  }
+  
+
+
+  #cash-tab{
+    width: 100%;
+    height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cash-left{
+    width: 127%;
+    padding: 107px;
+    margin: 50px;
+    font-family: 'AmpleSoft Pro', sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+    word-spacing: 0px;
+    font-size: 31px;
+    margin-right: 80px;
+}
+
+.cash-right{
+    width: 50%;
+    margin-left: 180px;
+    word-spacing: 2px;
+    line-height: 17px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    #cash-tab {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .cash-left,
+    .cash-right {
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .cash-right {
+      margin-left: 0;
+    }
+  
+    .cash-left {
+      font-size: large;
+      word-spacing: normal;
+      line-height: normal;
+    }
+  
+    .cash-right {
+      font-size: medium;
+      word-spacing: normal;
+      line-height: normal;
+    }
+  }
+  
+#safe-money {
+    width: 100%;
+    height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.safe-money-left{
+    width:50%
+}
+.safe-money-left h2{
+    color:darkblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    size: 30px;
+    line-height: 19px;
+    width: 160px;
+    margin: 2px;
+    padding: 2px;
+    
+}
+
+.safe-money-left p{
+    color: #818C96;
+   margin-top: 14px;
+   margin-left: 7px;
+}
+
+
+.safe-money-right{
+    width: 50%;
+    display: flex;
+    height: 45vh; 
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background-color: #161618;
+    color: white;
+    margin-left: 50px;
+}
+.safe-money-right h2{
+    line-height: 28px;
+    word-spacing: 2px;
+    font-weight: 700;
+    size: 40px;
+    color:  #F4F4F4;
+}
+.safe-money-right p{
+    font-size: small;
+    font-weight: 500;
+    size: 19px;
+    line-height: 15px;
+    letter-spacing: -0.13px; 
+    color: #818C96;
+}
+.safe-mon-1{
+    width: 53%;
+}
+.safe-mon-2{
+    width: 37%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    #safe-money {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .safe-money-left,
+    .safe-money-right {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+  
+    .safe-money-right {
+      margin-left: 0;
+      align-items: center;
+      height: 22rem;
+      width: 100%;
+    }
+
+  
+    .safe-money-left h2 {
+      width: auto;
+      font-size: 24px;
+      margin: 10px 0;
+    }
+  
+    .safe-money-left p {
+      margin: 10px 0;
+    }
+  
+    .safe-money-right h2 {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+  
+    .safe-money-right p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    
+    .safe-mon-1,
+    .safe-mon-2 {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  
+
+#receive-money{
+    width: 100%;
+    height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.card-blue {
+    background-color: #003366;
+    color: white;
+    width: 27%;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    border-radius: 16px;
+  }
+  .card-blue h2{
+    width: 90%;
+    word-spacing: 2px;
+    line-height: 27px;
+    padding: 20px;
+    font-weight: 700;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    
+     }
+     .card-blue p{
+        padding: 20px;
+        margin-top: -31px;
+        font-size: small;
+     }
+   
+     .card-blue img{
+       height: 35vh;
+       width: 60%;
+       padding: 14px;
+       margin-left: 57px;
+     }
+  
+  .card-gray {
+    color: #FFFFFF;
+    background-color: #2e2626;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    padding: 23px;
+    border-radius: 16px;
+    height: 57vh;
+  }
+  .card-gray h2{
+    width: 103%;
+  }
+
+  .card-gray img{
+    width: 90%;
+    height: 31vh;
+margin-left: 15px;
+margin-top: 44px;
+  }
+
+  
+  .card-white {
+    background-color: white;
+    color: black;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    padding: 70px;
+  }
+
+  .card-white h2{
+    font-family: "Outfit", sans-serif;;
+    color: #003366;
+    font-weight: 700;
+  }
+  .card-white p{
+    
+    color: #818C96;
+    width: 160%;
+  }
+
+  .transfer-section {
+    background-color: #001551; /* Background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 90%;
+    margin: 72px;
+    border-radius: 35px;
+    background-image: url('./assets/Mask.png'); /* Background image */
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+  
+  .transfer-left-side, .transfer-right-side {
+    padding: 20px;
+  }
+  
+  .transfer-left-side {
+    flex: 1;
+    color: white;
+    padding: 90px;
+    margin-top: -50px;
+  }
+
+  .transfer-left-side h2{
+width: 76%;
+font-size: 29px;
+font-weight: 900;
+  }
+  
+  .transfer-left-side p{
+    width: 58%;
+    color: #CCD5ED;
+    font-size: 14px;
+  }
+
+  .transfer-right-side {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .transfer-right-side img {
+    width: 46%; 
+    max-width: 205px; 
+    height: 21rem;
+    margin-left: 165px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #receive-money {
+      height: auto; 
+      flex-direction: column; 
+      padding: 20px;
+    }
+  
+    .card-blue,
+    .card-gray,
+    .card-white {
+      width: 100%;
+      margin-bottom: 20px; 
+    }
+  
+    .card-blue img,
+    .card-gray img {
+      width: 50%; 
+      margin: 0; 
+      padding: 10px;
+    }
+    
+    .card-blue h2,
+    .card-blue p,
+    .card-gray h2,
+    .card-white h2,
+    .card-white p {
+      width: 100%;
+    }
+    .transfer-section {
+      height: auto;
+      padding: 20px;
+      border-radius: 20px;
+      margin: 20px;
+    }
+  
+    .transfer-left-side {
+      padding: 20px;
+      margin-top: 0;
+    }
+  
+    .transfer-left-side h2 {
+      font-size: 20px;
+      font-weight: 700;
+      width: auto;
+    }
+  
+    .transfer-left-side p {
+      width: auto;
+      font-size: 12px;
+    }
+  
+    .transfer-right-side img {
+      width: 100%;
+      max-width: none;
+      height: auto;
+      margin-left: 0;
+    }
+
+
+  }
+  
+  #accordion-1{
+    background: #002BA3;
+    color: white;
+    transition: max-height 0.3s ease-out;
+    max-height: 50rem;
+    border-radius: 100% 100% 0% 0%;
+  }
+  .accordion {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .accordion-header {
+    text-align: center;
+    line-height: 65px;
+    font-weight: 700;
+    font-size: 35px;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+    margin: 20px;
+    margin-top: 38px;
+    
+  }
+  
+  .accordion-title {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: transparent;
+  }
+  
+  .toggle {
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 768px) {
+    #accordion-1 {
+      background: #002BA3;
+      color: white;
+      transition: max-height 0.3s ease-out;
+      border-radius: 100% 100% 0% 0%;
+      height: 22rem;
+    }
+  
+    .accordion {
+      width: 47%;
+      margin: 0 auto;
+      padding: 20px;
+      font-size: 9px;
+    }
+  
+    .accordion-header {
+      text-align: center;
+      line-height: 20px;
+      font-weight: 500; 
+      font-size: 16px;
+    }
+  
+    .accordion-item {
+      border-bottom: 1px solid #ccc;
+      margin: -14px;
+      margin-top: 38px;
+      width: 212px;
+      height: 6vh;
+    }
+  
+    .accordion-title {
+      cursor: pointer;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+    }
+  
+    .accordion-content {
+      display: none;
+      padding: 10px;
+      background-color: transparent;
+      width: 90%; 
+    }
+  
+    .toggle {
+      font-size: 20px;
+    }
+  }
+  
+  /*footer css*/
+
+  footer {
+    background-color: #002BA3;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    height: 25rem;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-top: 20px;
+  }
+
+  .left-footer, .right-footer {
+    flex: 1;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .right-footer p {
+    font-size: 9px; 
+  }
+  .left-footer p {
+    font-size: 19px; 
+  }
+
+  .left-footer {
+    margin-top: 45px;
+  }
+  @media screen and (max-width: 768px) {
+    footer {
+      height: auto;
+    }
+
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .left-footer {
+      margin-top: 20px;
+    }
+
+    .right-footer p {
+      font-size: 12px;
+    }
+
+    .left-footer p {
+      font-size: 16px;
+    }
+  }
