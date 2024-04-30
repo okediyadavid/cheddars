@@ -41,7 +41,7 @@ nav{
     align-items: center;
     background-color: transparent;
     position: fixed;
-    height: 50px;
+    height: 30px;
     transition: background-color 0.3s ease;
 }
 
