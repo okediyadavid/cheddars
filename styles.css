@@ -41,7 +41,7 @@ nav{
     align-items: center;
     background-color: transparent;
     position: fixed;
-    height: 50px;
+    height: 80px;
     transition: background-color 0.3s ease;
 }
 
@@ -50,7 +50,7 @@ nav button{
     background-color: white;
     color: black;
     padding:8px;
-    
+    border: none;
 }
 
 /* HERO SECTION STYLES */
@@ -99,7 +99,7 @@ nav button{
 }
 .hero-desc button{
     border-radius: 16px;
-    padding: 6px;
+    padding: 8px;
     top: 400px;
     left: 17%;
     transform: translateX(-50%);
@@ -107,6 +107,7 @@ nav button{
     color: black;
     background-color: #ccd5ed;
     z-index: 0;
+    border: none;
 }
 
 .card-1{
@@ -117,27 +118,153 @@ nav button{
     left: 754px;
     opacity: 1; 
     margin: 100px;
+   
 }
 
-.card-2{
-    position: absolute;
-    width: 204.33px;
-    height: 317.03px;
-    top: 98.32px;
-    left: 787px;
-    opacity: 1; 
-    transform: rotate(46.76deg);
-    margin: 100px;
+@media only screen and (max-width: 320px) {
+  #hero {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero-desc {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .hero-img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #hero h1 {
+    font-size: large;
+    margin-left: 0;
+  }
+
+  #hero p {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .hero-desc button {
+    border-radius: 16px;
+    padding: 6px;
+    top: auto;
+    left: 87px;
+  }
+
+  .card-1{
+    position: static;
+    width: 60%;
+    height: auto;
+    left: 754px;
+    
+  }
+
+  .transfer-left-side h2{
+    width: 68%;
+      }
+
 }
-.card-3{
-    position: absolute;
-    width: 268.78px;
-    height: 303.43px;
-    top: 72.47px;
-    left: 737.81px;
-    opacity: 1; 
-    transform: rotate(18.74deg);
-    margin: 100px;
+
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  #hero {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero-desc {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .hero-img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #hero h1 {
+    font-size: large;
+    margin-left: 0;
+  }
+
+  #hero p {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .hero-desc button {
+    border-radius: 16px;
+    padding: 6px;
+    top: auto;
+    left: 87px;
+  }
+
+  .card-1{
+    position: static;
+    width: 60%;
+    height: auto;
+    left: 754px;
+    
+  }
+
+   .transfer-left-side h2{
+    width: 68%;
+      }
+}
+
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  #hero {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero-desc {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .hero-img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #hero h1 {
+    font-size: large;
+    margin-left: 0;
+  }
+
+  #hero p {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .hero-desc button {
+    border-radius: 16px;
+    padding: 6px;
+    top: auto;
+    left: 87px;
+  }
+
+  .card-1{
+    position: static;
+    width: 60%;
+    height: auto;
+    left: 754px;
+    
+  }
+.transfer-left-side h2{
+    width: 68%;
+      }
 }
 
 
@@ -193,7 +320,7 @@ nav button{
       border-radius: 16px;
       padding: 6px;
       top: auto;
-      left: 20px;
+      left: 87px;
       position: relative;
       color: black;
       background-color: #ccd5ed;
@@ -211,26 +338,163 @@ nav button{
       margin: 100px;    
     }
 
-    .card-2{
-      width: 20%;
-      top: 150.32px;
-      left: 197px;
-      opacity: 1; 
-      transform: rotate(36.76deg);
-      margin: 90px;
-      height: 30vh;
-    }
-    .card-3{
-      top: 114.47px;
-      left: 178.81px;
-      opacity: 1; 
-      transform: rotate(16.74deg);
-      margin: 100px;
-      width: 25%;
-      height: 30vh;
-    }
+       .transfer-left-side h2{
+      width: 68%;
+        }
   }
   
+  @media screen and (min-width: 1024px) {
+    #hero h1 {
+      width: 243px;
+      font-size: large;
+      margin-left: 0;
+      margin-right: 0;
+      line-height: normal;
+      word-spacing: normal;
+    }
+
+    #hero p {
+      margin-left: 23px;
+      margin-right: 0;
+      margin-top: -32px;
+      word-spacing: normal;
+      width: 106%;
+    }
+  
+    .hero-desc button {
+      border-radius: 16px;
+      padding: 6px;
+      top: auto;
+      left: 107px;
+      position: relative;
+      color: black;
+      background-color: #ccd5ed;
+    }
+  
+    .hero-img{
+      width: 50%;
+      margin-top: 100px;
+      margin-left: 100px;
+  }
+    .card-1{
+      position: absolute;
+      width: 23%;
+      height: auto;
+      margin: 20px 0;
+      transform: none;  
+      top: 100px;
+      left: 580px;
+      opacity: 1; 
+      margin: 100px;    
+    }
+
+     .transfer-left-side h2{
+      width: 68%;
+        }
+  }
+
+
+@media screen and (min-width: 1440px) {
+  #hero h1 {
+    width: 74%;
+    font-size: 23px;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: normal;
+    word-spacing: normal;
+  }
+
+  #hero p {
+    margin-left: 28px;
+    margin-right: 0;
+    margin-top: -28px;
+    word-spacing: normal;
+  }
+
+  .hero-desc button {
+    border-radius: 16px;
+    padding: 6px;
+    top: auto;
+    left: 108px;
+    position: relative;
+    color: black;
+    background-color: #ccd5ed;
+  }
+
+  .hero-img{
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 231px;
+}
+  .card-1{
+    position: static;
+    width: 48%;
+    height: auto;
+    margin: 20px 0;
+    transform: none;  
+    top: 66px;
+    left: 754px;
+    opacity: 1; 
+    margin: 100px;    
+  }
+  .transfer-left-side h2{
+    width: 68%;
+      }
+
+}
+
+@media screen and (min-width: 2560px) {
+  #hero h1 {
+    width: 69%;
+    font-size: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: normal;
+    word-spacing: normal;
+  }
+
+  #hero p {
+    width: 50%;
+    margin-left: 26px;
+    margin-right: 0;
+    margin-top: -21px;
+    word-spacing: normal;
+  }
+
+  .hero-desc button {
+    border-radius: 16px;
+    padding: 6px;
+    top: auto;
+    left: 111px;
+    position: relative;
+    color: black;
+    background-color: #ccd5ed;
+  }
+  .hero-img{
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 345px;
+}
+
+  .card-1{
+    position: static;
+    width: 40%;
+    height: auto;
+    margin: 20px 0;
+    transform: none;  
+    top: 66px;
+    left: 754px;
+    opacity: 1; 
+    margin: 100px;    
+  }
+  .transfer-left-side h2{
+    width: 68%;
+      }
+}
+
+
+
+
 
 
 
@@ -634,13 +898,13 @@ margin-top: 44px;
   }
 
   .transfer-left-side h2{
-width: 80%;
+width: 34%;
 font-size: 35px;
 font-weight: 700;
   }
   
   .transfer-left-side p{
-    width: 54%;
+    width: 25%;
     color: #CCD5ED;
     font-size: 13px;
   }
@@ -700,11 +964,11 @@ font-weight: 700;
     .transfer-left-side h2 {
       font-size: 20px;
       font-weight: 700;
-      width: auto;
+      width: 189px;
     }
   
     .transfer-left-side p {
-      width: auto;
+      width: 216px;
       font-size: 12px;
     }
   
